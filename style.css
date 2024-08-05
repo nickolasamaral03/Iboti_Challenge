@@ -143,12 +143,31 @@ a:visited{
     margin-left: 150px;
 }
 
+.aviso{
+    text-align: center; 
+    font-size: 0.8rem; 
+    color: red;
+}
+
 /* Responsividade feita aqui, com o máximo dos elementos de 1200 no width*/
 @media(max-width:1200px){ 
     .titulo{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        white-space: nowrap;
+        padding: 8px;
     }
 
+    .all_header{
+        position: fixed;
+        display: flex;
+        top: 0;
+        justify-content: space-between;
+        background-color: rgba(133, 117, 117, 0.152);
+        height: 40px;
+        width: 100%;
+        /* padding: 10px 50px 10px 10px; */
+        margin-bottom: 20px;
+    }
     .section_one{
         display: flex;
         width: 80%;
@@ -165,13 +184,47 @@ a:visited{
     }
 
     .justice_img{
-        height: 900px;
+        height: 700px;
         width: 350px;
         border-radius: 6%;
         margin-top: 100px;
     }
 
+    li{
+        margin-right: 20px;
+        padding-right: 10px;
+        font-size: 1.3rem;
+        margin-left: -20px;
+    }
+
+    .apresentacao{
+        font-size: 1.4rem;
+    }
+
     .cadastro_title{
        display: none;
+    }
+
+    input{
+        height: 45px;
+    }
+
+    label{
+        font-size: 1.2rem;
+    }
+
+    button{
+        width: 190px;
+        margin-top: 50px;
+    }
+
+    .aviso{
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    footer{
+        font-size: 1.2rem;
+        padding: 10px;
     }
 }
