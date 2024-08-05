@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* No HTML quando clicado na nav vai diretamente para a section correspondente e aqui faz com o que vai em modo lento */
+
+body{
+    background-color: #D9D7D7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.all_header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    background-color: rgba(133, 117, 117, 0.152);
+    height: 30px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    font-size: 1.8rem;
+}
+
+header{
+    display: flex;
+}
+
+ul{
+    display: flex;
+    margin: 5px 40px 0px 0px;
+}
+
+li{
+    margin: 0 70px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+.img_icone{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+}
+
+.section_one{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.justice_img{
+    height: 450px;
+    width: 450px;
+    border-radius: 6%;
+    margin-top: 50px;
+}
+
+.apresentacao{
+    line-height: 50px;
+    margin: 50px 0 0 90px;
+    font-size: 1.2rem;
+}
+
+footer{
+    background-color: #988989;
+    text-align: center;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.section_two{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    height: 70vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+input{
+    height: 29px;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+
+}
+
+.cadastro_title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+label{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+button{
+    height: 40px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #E17070;
+    color: white;
+    width: 100px;
+}
+
+.btn{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 40px;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+a:link{
+    color: black;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+a:visited{
+    color: black;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+/* Responsividade feita aqui, com o máximo dos elementos de 1200 no width*/
+@media(max-width:1200px){ 
+    .titulo{
+        font-size: 1rem;
+    }
+
+    .section_one{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        height: 100vh;
+        margin-top: 100px;
+    }
+
+    .section_two{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 880px;
+    }
+
+    .justice_img{
+        height: 900px;
+        width: 350px;
+        border-radius: 6%;
+        margin-top: 100px;
+    }
+
+    .cadastro_title{
+       display: none;
+    }
+}
